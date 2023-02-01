@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://iconutopia.com/wp-content/uploads/2016/06/space-dog-laika1.png">
+    <title>DevFolio</title>
+</head>
+
+<body class="container">
+    <nav>
+        <div class="logo glowing-text">DevFolio<b>.</b></div>
+        <ul class="navItems nav-select">
+            <li><a class="a-home" href="#sec-profile">HOME</a></li>
+            <li><a class="a-about" href="#sec-about">ABOUT</a></li>
+            <li><a class="a-work" href="#sec-portfolio">WORK</a></li>
+        </ul>
+        <div class="links">
+            <a href="https://web.facebook.com/PoundNarongrid"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/Maxl3oss"><i class="fa-brands fa-github-square"></i></a>
+        </div>
+        <div class="nav-menu">
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><span></span></label>
+            <label for="active" class="close"></label>
+            <div class="wrapper">
+                <ul onclick="onClick()">
+                    <li><a href="#sec-profile">HOME</a></li>
+                    <li><a href="#sec-about">ABOUT</a></li>
+                    <li><a href="#sec-portfolio">WORK</a></li>
+                    <li><a href="https://web.facebook.com/PoundNarongrid">FACEBOOK</a></li>
+                    <li><a href="https://github.com/Maxl3oss">GITHUB</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <article>
+        <section class="sec-profile parallax" id="sec-profile">
+            <!-- <div class="item-profile">
+                <img class="profile" src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-6/274567301_5002597413190297_5346649272573161844_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHkIk_YU-D-r5HaXqONSeTdpK32VyzOFBWkrfZXLM4UFeTsiMMcfzMHFmBYLaH8B110sFc8eqlgw-cOCDH2ou1w&_nc_ohc=ZpBHiZLJ8C4AX-FWHXp&_nc_zt=23&_nc_ht=scontent.fbkk22-3.fna&oh=00_AfDm1R2ExN5WWZGFWWp9Xg59BWUnmks9F71v907LQkARIg&oe=63C59E13" alt="" srcset="">
+            </div> -->
+            <div class="stars"></div>
+            <div class="twinkling"></div> 
+            <div class="clouds"></div>
+            <div class="text-profile">
+                <p>
+                    PORTFOLIO .
+                </p>
+            </div>
+        </section>
+        <section class="sec-about" id="sec-about">
+            <div class="card">
+                <div class="col-1">
+                    <div class="item-about">
+                        <div class="profile-about">
+                            <img class="profile-about" src="image/profile_image.jpg" alt="" srcset="">
+                        </div>
+                        <div class="text-about">
+                            <p>Name : <a>Narongrid Naorkham</a></p>
+                            <p>Age : <a>21</a> </p>
+                            <p>Phone : <a>082-502-9999</a></p>
+                            <p>Email : <a>narongrid.dev@gmail.com</a> </p>
+                        </div>
+                    </div>
+                    <div class="skill-about">
+                        <h1>SKILL</h1>
+                        <div class="col">
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/html.png" alt="" srcset="">
+                                <a>HTML</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/css.png" alt="" srcset="">
+                                <a>CSS</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/js.png" alt="" srcset="">
+                                <a>JS</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/ts.png" alt="" srcset="">
+                                <a>Type Script</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/php.png" alt="" srcset="">
+                                <a>PHP</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/java.png" alt="" srcset="">
+                                <a>JAVA</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/nodejs.png" alt="" srcset="">
+                                <a>NodeJS</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/react.png" alt="" srcset="">
+                                <a>React</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/vue.png" alt="" srcset="">
+                                <a>Vue</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/linux.png" alt="" srcset="">
+                                <a>Linux</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/rest-api.png" alt="" srcset="">
+                                <a>REST API</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/laravel.png" alt="" srcset="">
+                                <a>Laravel</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/github.png" alt="" srcset="">
+                                <a>Git</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/mariadb.png" alt="" srcset="">
+                                <a>MariaDB</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/mongodb.png" alt="" srcset="">
+                                <a>MongoDB</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/docker.png" alt="" srcset="">
+                                <a>Docker</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/firebase.png" alt="" srcset="">
+                                <a>Firebase</a>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="icon" src="./image/icons/nginx.png" alt="" srcset="">
+                                <a>Nginx</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 about-me">
+                    <h1>About me</h1>
+                    <div>
+                        <a>ผมชื่อนาย ณรงค์ฤทธิ์ หน่อคำ อายุ 21 ปี กำลังศึกษาอาชีวภูเก็ต ป.ตรี ทล.บ.1 (ป.ตรีต่อเนื่อง ภาคเสาร์อาทิตย์) ตอนนี้มองหาที่ฝึกงาน 1 เมษายน 2566 - 31 มีนาคม 2567 วันจันทร์-ศุกร์ ในจังหวัดภูเก็ตหรือ WFH ก็ได้เนื่องจากหลักสูตรที่เรียนเป็นแบบเสาร์อาทิตย์  วันปกติจะนั่งศึกษาด้วยตนเองในสิ่งที่สนใจ ช่วงนี้สนใจเรื่อง CSS และ NestJs (Type script & OOP) เป็นพิเศษ</a>
+                        <br />
+                    </div>
+                </div>
+        </section>
+        <section class="sec-portfolio" id="sec-portfolio">
+            <div class="item-portfolio">
+                <h1>PORTFOLIO</h1>
+                <p>ผลงานทั้งหมดที่มีอยู่</p>
+                <div class="line"></div>
+                <div class="card">
+                    <div class="item-card">
+                        <div class="bg-card">
+                            <div class="image">
+                                <img src="./image/certificate.png" alt="">
+                            </div>
+                            <div class="des">
+                                borntoDev
+                            </div>
+                            <div class="cat">
+                                <p>Dev Lap</p>
+                                <div class="time">/ 13-01-2023</div>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="bg-card">
+                            <div class="image">
+                                <img src="https://res.cloudinary.com/dopjszhwq/image/upload/v1673606900/PORTFOLIO/Screenshot_from_2023-01-13_17-47-27_zcz52w.png" alt="">
+                            </div>
+                            <div class="des">
+                                Grade 3.78 ปวส. สาขาเทคโนโลยีสารสนเทศ
+                            </div>
+                            <div class="cat">
+                                <p>GPA</p>
+                                <div class="time">/ 18-03-2022</div>
+                                <i class="fa-regular fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="bg-card">
+                            <div class="image">
+                                <img src="https://res.cloudinary.com/dopjszhwq/image/upload/v1673607096/PORTFOLIO/Screenshot_from_2023-01-13_17-50-44_pojj29.png" alt="">
+                            </div>
+                            <div class="des">
+                                Project 2021 Hoppen Ecommerce Online
+                            </div>
+                            <div class="cat">
+                                <p>Vue, Laravel</p>
+                                <div class="time">/ 18-03-2022</div>
+                                <a href="https://hopen-174b9.web.app/">
+                                    <i class="fa-regular fa-eye view"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="bg-card">
+                            <div class="image">
+                                <img src="https://res.cloudinary.com/dopjszhwq/image/upload/v1673618568/PORTFOLIO/gameJs_psnpmi.png" alt="">
+                            </div>
+                            <div class="des">
+                                Fighting Game Js
+                            </div>
+                            <div class="cat">
+                                <p>Three.JS</p>
+                                <div class="time">/ 20-05-2022</div>
+                                <a href="https://gamejs-dce78.web.app/">
+                                    <i class="fa-regular fa-eye view"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="bg-card">
+                            <div class="image">
+                                <img src="https://res.cloudinary.com/dopjszhwq/image/upload/v1673607202/PORTFOLIO/research-nn_kzw4nr.png" alt="">
+                            </div>
+                            <div class="des">
+                                Project 2022 Research Digital Collection
+                            </div>
+                            <div class="cat">
+                                <p>React, NodeJS</p>
+                                <div class="time">/ 31-03-2024</div>
+                                <a href="https://research-nn.web.app/">
+                                    <i class="fa-regular fa-eye view"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <div class="footer-item">
+            <a href="https://firebasestorage.googleapis.com/v0/b/devfolio-4c398.appspot.com/o/Resume.pdf?alt=media&token=6f3e785f-c1bd-4a66-838a-60e381d856e2">
+                <i class="fa fa-download"></i>
+                RESUME
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
